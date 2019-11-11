@@ -90,7 +90,7 @@ Shader "Unlit/Spilled"
 					vec2 w = m * v; // = vec2(1. * 10. + 3. * 20., 2. * 10. + 4. * 20.)
 					*/
 					//p = float2(m[0][0] * p.x + m[0][1] * p.y, m[1][0] * p.x + m[1][1] * p.y);
-					// now I realise that you can simply use 'mul' function, but anyway
+					// now I realise that I could have simply used 'mul' function, but anyway
 					p = float2(m[0][0] * p.x + m[1][0] * p.y, m[0][1] * p.x + m[1][1] * p.y);
 				}
 				return (rot / float(RotNum)) / dot(b, b);
